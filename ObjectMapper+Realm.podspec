@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
   s.version          = '0.1'
   s.summary          = "A Realm extension that serializes arbitrary JSON into Realm's List class"
 
-  s.homepage         = 'https://github.com/jakenberg/ObjectMapper+Realm'
+  s.homepage         = 'https://github.com/jakenberg/ObjectMapper-Realm'
   s.license          = "MIT"
   s.author           = { 'Jake Peterson' => 'hello@jakenberg.io' }
-  s.source           = { :git => 'https://github.com/jakenberg/ObjectMapper+Realm.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/jakenberg/ObjectMapper-Realm.git', :tag => s.version.to_s }
 
   s.watchos.deployment_target = "2.0"
   s.ios.deployment_target = "8.0"

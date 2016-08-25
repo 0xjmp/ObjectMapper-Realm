@@ -12,8 +12,9 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.9"
 
   s.requires_arc = "true"
-  s.source_files = "ObjectMapper+Realm/**/*.swift"
+
   s.dependency "ObjectMapper"
-  s.dependency "Realm"
   s.dependency "RealmSwift"
+
+  s.source_files = "ObjectMapper+Realm/*.swift"
 end

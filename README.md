@@ -17,6 +17,10 @@ pod "ObjectMapper+Realm"
 
 To use `ListTransform` just add it to the mapping of your RealmObject:
 ```swift
+import ObjectMapper
+import RealmSwift
+import ObjectMapper_Realm
+
 class User: Object, Mappable {
   var username: NSString?
   var friends: List<User>?

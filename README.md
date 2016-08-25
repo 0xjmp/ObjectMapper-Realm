@@ -39,7 +39,7 @@ Have fun! 🎬
 
 ## Author
 
-[Jake Peterson](jakenberg.io)
+[Jake Peterson](http://jakenberg.io)
 
 ## License
 

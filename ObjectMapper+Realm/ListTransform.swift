@@ -12,6 +12,8 @@ import RealmSwift
 
 public struct ListTransform<T: RealmSwift.Object where T: Mappable>: TransformType {
     
+    public init() { }
+    
     public typealias Object = List<T>
     public typealias JSON = Array<AnyObject>
     

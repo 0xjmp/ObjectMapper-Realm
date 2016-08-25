@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = "true"
   s.source_files = "ObjectMapper+Realm/**/*.swift"
-  s.dependency "ObjectMapper", "~> 1.0"
-  s.dependency "RealmSwift", "~> 1.0"
+  s.dependency "ObjectMapper"
+  s.dependency "RealmSwift"
 end

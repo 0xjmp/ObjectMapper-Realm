@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ObjectMapper+Realm'
-  s.version          = '0.1'
+  s.version          = '0.2'
   s.summary          = "A Realm extension that serializes arbitrary JSON into Realm's List class"
 
   s.homepage         = 'https://github.com/jakenberg/ObjectMapper-Realm'
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.dependency "ObjectMapper"
   s.dependency "RealmSwift"
-  
+
   s.pod_target_xcconfig = {
     'SWIFT_VERSION' => '3.0',
   }

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ObjectMapper+Realm'
-  s.version          = '0.2'
+  s.version          = '0.3'
   s.summary          = "A Realm extension that serializes arbitrary JSON into Realm's List class"
 
   s.homepage         = 'https://github.com/jakenberg/ObjectMapper-Realm'

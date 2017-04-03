@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 import RealmSwift
 
-public struct ListTransform<T: RealmSwift.Object>: TransformType where T: Mappable {
+public struct ListTransform<T: RealmSwift.Object>: TransformType where T: BaseMappable {
     
     public init() { }
     

@@ -22,7 +22,8 @@ DerivedData
 # Bundler
 .bundle
 
-Carthage
+Carthage/
+Cartfile.resolved
 
 Pods/
 Podfile*

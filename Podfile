@@ -3,8 +3,8 @@ platform :ios, '8.0'
 use_frameworks!
 
 def shared_pods
-  pod 'RealmSwift'
-  pod 'ObjectMapper'
+  pod 'RealmSwift', '~> 2.10.0'
+  pod 'ObjectMapper', '~> 2.2.8'
 end
 
 target 'ObjectMapper_Realm' do

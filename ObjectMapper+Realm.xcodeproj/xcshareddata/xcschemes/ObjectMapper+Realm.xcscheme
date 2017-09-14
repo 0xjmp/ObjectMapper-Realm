@@ -20,6 +20,34 @@
                ReferencedContainer = "container:ObjectMapper+Realm.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "091B3DFBE30698463303DCDE57A61B2A"
+               BuildableName = "Pods_ObjectMapper_Realm.framework"
+               BlueprintName = "Pods-ObjectMapper_Realm"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6EFAC2FB08EAD27AA43AA10D6AAFB7CA"
+               BuildableName = "Pods_ObjectMapper_RealmTests.framework"
+               BlueprintName = "Pods-ObjectMapper_RealmTests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

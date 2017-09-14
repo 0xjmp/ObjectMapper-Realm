@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.9"
   s.tvos.deployment_target = "10.0"
 
-  s.requires_arc = "true"
+  s.requires_arc = true
 
   s.dependency "ObjectMapper"
   s.dependency "RealmSwift"

@@ -23,7 +23,7 @@ import ObjectMapper_Realm
 
 class User: Object, Mappable {
   dynamic var username: NSString?
-  dynamic var friends: List<User>?
+  var friends: List<User>?
 
   required convenience init?(_ map: Map) {
     self.init()

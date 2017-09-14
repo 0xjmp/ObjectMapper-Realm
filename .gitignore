@@ -26,8 +26,3 @@ Carthage/
 Cartfile.resolved
 
 Pods/
-Podfile*
-
-*.xcodeproj
-*.xcworkspace
-AppDelegate.swift

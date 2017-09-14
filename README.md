@@ -1,8 +1,9 @@
 # ObjectMapper+Realm
 
-[![Version](https://img.shields.io/cocoapods/v/ObjectMapper+Realm.svg?style=flat)](http://cocoapods.org/pods/ObjectMapper+Realm)
-[![License](https://img.shields.io/cocoapods/l/ObjectMapper+Realm.svg?style=flat)](http://cocoapods.org/pods/ObjectMapper+Realm)
 [![Platform](https://img.shields.io/cocoapods/p/ObjectMapper+Realm.svg?style=flat)](http://cocoapods.org/pods/ObjectMapper+Realm)
+[![Version](https://img.shields.io/cocoapods/v/ObjectMapper+Realm.svg?style=flat)](http://cocoapods.org/pods/ObjectMapper+Realm)
+[![Build Status](https://travis-ci.org/Jakenberg/ObjectMapper-Realm.svg?branch=master)](https://travis-ci.org/Jakenberg/ObjectMapper-Realm)
+[![License](https://img.shields.io/cocoapods/l/ObjectMapper+Realm.svg?style=flat)](http://cocoapods.org/pods/ObjectMapper+Realm)
 
 ## Installation
 

@@ -1,3 +1,5 @@
 language: objective-c
 xcode_project: ObjectMapper+Realm.xcodeproj
 xcode_scheme: ObjectMapper_RealmTests
+after_success: 
+  - bash <(curl -s https://codecov.io/bash) -J 'ObjectMapper_Realm'

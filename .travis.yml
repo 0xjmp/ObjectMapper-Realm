@@ -1,0 +1,3 @@
+language: objective-c
+xcode_project: ObjectMapper+Realm.xcodeproj
+xcode_scheme: ObjectMapper_RealmTests

@@ -3,7 +3,7 @@
 //  ObjectMapper+Realm
 //
 //  Created by Jake Peterson on 9/13/17.
-//  Copyright © 2017 Jake Peterson. All rights reserved.
+//  Copyright 2017 Jake Peterson. All rights reserved.
 //
 
 import XCTest

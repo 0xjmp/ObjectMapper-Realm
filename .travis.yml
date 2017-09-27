@@ -1,9 +1,0 @@
-language: objective-c
-xcode_project: ObjectMapper+Realm.xcworkspace
-xcode_scheme: ObjectMapper_RealmTests
-before_install:
-  - rvm use system
-  - sudo gem install cocoapods -v '1.1.1'
-  - pod setup
-after_success: 
-  - bash <(curl -s https://codecov.io/bash) -J 'ObjectMapper_Realm'

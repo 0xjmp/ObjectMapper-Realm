@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/ObjectMapper+Realm.svg?style=flat)](http://cocoapods.org/pods/ObjectMapper+Realm)
 [![License](https://img.shields.io/cocoapods/l/ObjectMapper+Realm.svg?style=flat)](https://github.com/Jakenberg/ObjectMapper-Realm/blob/master/LICENSE)
 
-## Installation
+## Installation [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ObjectMapper+Realm is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:

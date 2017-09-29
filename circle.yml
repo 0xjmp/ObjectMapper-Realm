@@ -1,3 +1,22 @@
 machine:
   xcode:
     version: "8.2"
+dependencies:
+  pre:
+    - xcrun instruments -w "iPhone 6 (8.3 Simulator)" || exit 0
+  override:    
+    - sudo gem install cocoapods xcpretty obcd -N
+    - pod install
+test:
+  override:
+    - set -o pipefail && xcodebuild -workspace ObjectMapper+Realm.xcworkspace -scheme
+      ObjectMapper+Realm -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6"
+      GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES
+      GCC_GENERATE_TEST_COVERAGE_FILES=YES clean test | xcpretty -c 
+      --report junit --output ${CIRCLE_TEST_REPORTS}/junit.xml
+    - pod lib lint --quick
+deployment:
+  codecov:
+    branch: /.*/
+    commands:
+      - bash <(curl -s https://codecov.io/bash)

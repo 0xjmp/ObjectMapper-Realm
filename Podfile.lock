@@ -10,11 +10,17 @@ DEPENDENCIES:
   - ObjectMapper (~> 2.2.8)
   - RealmSwift (~> 2.10.0)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ObjectMapper
+    - Realm
+    - RealmSwift
+
 SPEC CHECKSUMS:
   ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
   Realm: 98b3a25643cf6b3e07d2b99fb43fe0eb9c801dec
   RealmSwift: 34073ad3a31232bbaf7c0db898c037940284cba2
 
-PODFILE CHECKSUM: 333752202f7790ae55e0f78220a478f9399d6b46
+PODFILE CHECKSUM: 2985dcaf7a49f20022039579f68af0b693ac5452
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.0

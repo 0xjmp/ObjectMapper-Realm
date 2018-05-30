@@ -14,3 +14,8 @@ end
 target 'ObjectMapper_RealmTests' do
   shared_pods
 end
+
+target 'ObjectMapper_Realm_Watch_Extension' do
+  platform :watchos, '4.1'
+  shared_pods
+end

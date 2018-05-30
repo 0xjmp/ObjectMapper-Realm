@@ -49,4 +49,4 @@ Have fun! 🎬
 
 ## License
 
-ObjectMapper+Realm is available under the MIT license. See the LICENSE file for more info.
+ObjectMapper+Realm is available under the MIT license. See the [LICENSE](https://github.com/Jakenberg/ObjectMapper-Realm/blob/master/LICENSE) file for more info.

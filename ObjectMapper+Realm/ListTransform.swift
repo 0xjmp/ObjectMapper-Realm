@@ -10,14 +10,14 @@ import Foundation
 import ObjectMapper
 import RealmSwift
 
-public struct ListTransform<T: RealmSwift.Object>: TransformType where T: BaseMappable {
+struct ListTransform<T: RealmSwift.Object>: TransformType where T: BaseMappable {
     
-    public init() { }
+    init() { }
     
-    public typealias Object = List<T>
-    public typealias JSON = Array<Any>
+    typealias Object = List<T>
+    typealias JSON = Array<Any>
     
-    public func transformFromJSON(_ value: Any?) -> List<T>? {
+    func transformFromJSON(_ value: Any?) -> List<T>? {
         if let objects = Mapper<T>().mapArray(JSONObject: value) {
             let list = List<T>()
             list.append(objectsIn: objects)
@@ -26,7 +26,7 @@ public struct ListTransform<T: RealmSwift.Object>: TransformType where T: BaseMa
         return nil
     }
     
-    public func transformToJSON(_ value: Object?) -> JSON? {
+    func transformToJSON(_ value: Object?) -> JSON? {
         return value?.compactMap { $0.toJSON() }
     }
     

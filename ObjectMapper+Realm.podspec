@@ -21,4 +21,6 @@ Pod::Spec.new do |s|
     'SWIFT_VERSION' => '5.0',
   }
   s.source_files = "ObjectMapper+Realm/*.swift"
+
+  s.swift_version = '5.0'
 end

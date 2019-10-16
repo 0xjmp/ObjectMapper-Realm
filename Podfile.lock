@@ -11,7 +11,7 @@ DEPENDENCIES:
   - RealmSwift (~> 3.17.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - ObjectMapper
     - Realm
     - RealmSwift
@@ -23,4 +23,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: f48e2e5f9255411fe5fe9e4f4f62344cf6a23114
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.8.3

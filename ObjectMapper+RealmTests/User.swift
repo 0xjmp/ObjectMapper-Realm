@@ -11,7 +11,7 @@ import RealmSwift
 import ObjectMapper_Realm
 
 class User: Object, Mappable {
-    dynamic var username: NSString?
+    @objc dynamic var username = ""
     var friends: List<User>?
     
     required convenience init?(map: Map) {

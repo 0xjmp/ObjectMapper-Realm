@@ -15,6 +15,8 @@ it, simply add the following line to your Podfile:
 pod "ObjectMapper+Realm"
 ```
 
+You may also install it through [Swift Package Manager](https://swift.org/package-manager/).
+
 ## Usage
 
 To use `ListTransform` just add it to the mapping of your RealmObject:

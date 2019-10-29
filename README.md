@@ -43,6 +43,25 @@ class User: Object, Mappable {
   }
 }
 ```
+
+If you need to have control over your newly serialized objects, you can use the `onSerialize` callback:
+```
+class User: Object, Mappable {
+
+    func mapping(map: Map) {
+        username              <- map["username"]
+        friends               <- (map["friends"], ListTransform<User>(onSerialize: onSerialize))
+    }
+
+    private func onSerialize(users: List<User>) {
+        let realm = Storage.shared.realm
+        try! realm.write {
+            realm.add(users, update: .modified)
+        }
+    }
+}
+```
+
 Have fun! 🎬
 
 ## Author

@@ -45,7 +45,7 @@ class User: Object, Mappable {
 ```
 
 If you need to have control over your newly serialized objects, you can use the `onSerialize` callback:
-```
+```swift
 class User: Object, Mappable {
 
     func mapping(map: Map) {

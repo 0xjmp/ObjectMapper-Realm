@@ -12,18 +12,23 @@ import RealmSwift
 
 struct ListTransform<T: RealmSwift.Object>: TransformType where T: BaseMappable {
     
-    init() { }
+    typealias Serialize = (List<T>) -> ()
+    private let onSerialize: Serialize
+    
+    init(onSerialize: @escaping Serialize = { _ in }) {
+        self.onSerialize = onSerialize
+    }
     
     typealias Object = List<T>
     typealias JSON = Array<Any>
     
     func transformFromJSON(_ value: Any?) -> List<T>? {
+        let list = List<T>()
         if let objects = Mapper<T>().mapArray(JSONObject: value) {
-            let list = List<T>()
             list.append(objectsIn: objects)
-            return list
         }
-        return nil
+        self.onSerialize(list)
+        return list
     }
     
     func transformToJSON(_ value: Object?) -> JSON? {

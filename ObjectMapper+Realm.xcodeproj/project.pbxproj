@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234360BB2368D1110037BC92 /* ListTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = D207CD261F6A21550055B8FE /* ListTransform.swift */; };
 		4C9052BC3160BD17EC8B75B8 /* Pods_ObjectMapper_RealmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3377D0A229F82680A2F1C2 /* Pods_ObjectMapper_RealmTests.framework */; };
 		CF81D24DBB3918525A74969B /* Pods_ObjectMapper_Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EAA9A6C617CE9BF1FC5125 /* Pods_ObjectMapper_Realm.framework */; };
 		D207CD141F6A21200055B8FE /* ObjectMapper_Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D207CD0A1F6A21200055B8FE /* ObjectMapper_Realm.framework */; };
@@ -308,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234360BB2368D1110037BC92 /* ListTransform.swift in Sources */,
 				D207CD311F6A23590055B8FE /* User.swift in Sources */,
 				D207CD2F1F6A22CF0055B8FE /* ListTransformTests.swift in Sources */,
 			);
@@ -487,7 +489,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41C55ABE3239F799AF25576B /* Pods-ObjectMapper_RealmTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ObjectMapper+RealmTests/Info.plist";
@@ -504,7 +506,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27EB964D8E182B6CB3B3C5F6 /* Pods-ObjectMapper_RealmTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ObjectMapper+RealmTests/Info.plist";

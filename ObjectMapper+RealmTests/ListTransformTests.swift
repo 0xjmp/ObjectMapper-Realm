@@ -8,6 +8,7 @@
 
 import XCTest
 import ObjectMapper
+import RealmSwift
 
 class ListTransformTests: XCTestCase {
     
@@ -15,15 +16,15 @@ class ListTransformTests: XCTestCase {
     
     var userJson: [String: Any] {
         get {
-            return ["username": "0", "friends": friends]
+            return ["username": "popular", "friends": friends]
         }
     }
     
     var friends: [[String: String]] {
         get {
             return [
-                ["username": "1"],
-                ["username": "2"]
+                ["username": "jack"],
+                ["username": "jill"]
             ]
         }
     }
@@ -33,7 +34,7 @@ class ListTransformTests: XCTestCase {
         userJsonFakeFriends["friends"] = ["not": "valid"]
         let user = mapper.map(JSONObject: userJsonFakeFriends)
         XCTAssertNotNil(user, "should serialize user")
-        XCTAssertNil(user!.friends)
+        XCTAssertTrue(user!.friends!.isEmpty)
     }
     
     func testSerializeFromJson() {
@@ -42,11 +43,11 @@ class ListTransformTests: XCTestCase {
         XCTAssertEqual(user!.friends!.count, friends.count)
     }
     
-    func testSerializeToJson() {
-        let user = mapper.map(JSONObject: userJson)
-        XCTAssertNotNil(user, "should serialize user")
-        let json = mapper.toJSON(user!)
-        XCTAssertNotNil(json["friends"], "should deserialize friends")
-    }
+//    func testSerializeToJson() {
+//        let user = mapper.map(JSONObject: userJson)
+//        XCTAssertNotNil(user, "should serialize user")
+//        let json = mapper.toJSON(user!)
+//        XCTAssertNotNil(json["friends"], "should deserialize friends")
+//    }
     
 }

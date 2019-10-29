@@ -10,8 +10,19 @@ import ObjectMapper
 import RealmSwift
 import ObjectMapper_Realm
 
+class Storage {
+    static let shared = Storage()
+    
+    var realm: Realm {
+        get {
+            let config = Realm.Configuration(inMemoryIdentifier: "test")
+            return try! Realm.init(configuration: config)
+        }
+    }
+}
+
 class User: Object, Mappable {
-    @objc dynamic var username = ""
+    @objc dynamic var username: NSString = ""
     var friends: List<User>?
     
     required convenience init?(map: Map) {
@@ -24,6 +35,13 @@ class User: Object, Mappable {
     
     func mapping(map: Map) {
         username              <- map["username"]
-        friends               <- (map["friends"], ListTransform<User>())
+        friends               <- (map["friends"], ListTransform<User>(onSerialize: onSerialize))
+    }
+    
+    private func onSerialize(users: List<User>) {
+        let realm = Storage.shared.realm
+        try! realm.write {
+            realm.add(users, update: .modified)
+        }
     }
 }

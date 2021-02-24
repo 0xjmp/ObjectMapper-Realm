@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ObjectMapper+Realm'
-  s.version          = '0.9'
+  s.version          = '1.1'
   s.summary          = "A Realm extension that serializes arbitrary JSON into Realm's List class"
 
   s.homepage         = 'https://github.com/jakenberg/ObjectMapper-Realm'
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Jake Peterson' => 'hello@jakenberg.io' }
   s.source           = { :git => 'https://github.com/jakenberg/ObjectMapper-Realm.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "9.0"
   s.osx.deployment_target = "10.9"
   s.tvos.deployment_target = "10.0"
 

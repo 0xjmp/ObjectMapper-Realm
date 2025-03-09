@@ -8,7 +8,7 @@ let objectMapperVersionStr = "3.5.1"
 let package = Package(
     name: "ObjectMapper+Realm",
     platforms: [
-        .iOS(.v8),
+        .iOS(.v9),
         .tvOS(.v10),
         .macOS(.v10_10),
     ],
